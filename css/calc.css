@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.container-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: auto;
+  padding: 50px;
+  text-align: right;
+}
+.container-row {
+  display: flex;
+}
+.button {
+  flex-basis: 25%;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px #000;
+  text-align: center;
+  background-color: orange;
+  padding: 40px;
+  font-size: 1.5em;
+  color: #dadddf;
+  text-shadow: 2px 2px 2px #1a1c20;
+  cursor: pointer;
+  margin: 0.8px;
+}
+.double {
+  flex-basis: 50%;
+}
+.display {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 2em;
+  background-color: #1a1c20;
+  color: #fff;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 2px #000;
+  border-radius: 5px;
+}
+.equals,
+.clear,
+.oprator,
+.negative {
+  background-color: #f77e21;
+}
+.card {
+  background-color: #eaf6f6;
+  box-shadow: 0 4px 8px 0 #1a1c20;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 20px;
+}
+.button:hover {
+  font-weight: bolder;
+  text-shadow: 3px 3px 3px #1a1c20;
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .button {
+    padding: 10px;
+  }
+}
